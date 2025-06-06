@@ -14,7 +14,10 @@
   "files": [
     "dist"
   ],
-  "repository": "github:Aseminaunz/merge-callbacks",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aseminaunz/merge-callbacks.git"
+  },
   "scripts": {
     "build": "tsc"
   },
