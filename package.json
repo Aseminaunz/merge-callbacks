@@ -11,7 +11,7 @@
   ],
   "type": "module",
   "main": "dist/index.js",
-  "repository": "github:aseminaunz/merge-callbacks",
+  "repository": "github:Aseminaunz/merge-callbacks",
   "scripts": {
     "build": "tsc"
   },
