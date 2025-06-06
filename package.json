@@ -17,7 +17,7 @@
   },
   "author": "Aimar Seminario Unzu <aimar.seminario@gmail.com> (https://github.com/Aseminaunz)",
   "license": "MIT",
-  "packageManager": "pnpm@10.11.1+sha512.e519b9f7639869dc8d5c3c5dfef73b3f091094b0a006d7317353c72b124e80e1afd429732e28705ad6bfa1ee879c1fce46c128ccebd3192101f43dd67c667912",
+  "packageManager": "npm@11.4.1+sha512.fcee43884166b6f9c5d04535fb95650e9708b6948a1f797eddf40e9778646778a518dfa32651b1c62ff36f4ac42becf177ca46ca27d53f24b539190c8d91802b",
   "devDependencies": {
     "typescript": "^5.8.3",
     "@tsconfig/strictest": "^2.0.5"

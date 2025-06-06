@@ -24,22 +24,17 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: pnpm/action-setup@v4
-        name: Install pnpm
-        with:
-          run_install: false
-
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: 'pnpm'
+          node-version: '18'
+          cache: 'npm'
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: npm ci
 
       - name: Build the project
-        run: pnpm build
+        run: npm run build
 
       - name: Generate artifact attestation
         uses: actions/attest-build-provenance@v2
@@ -86,4 +81,4 @@ jobs:
 
       - name: Publish to npm
         if: steps.check_tag.outputs.released == 'false'
-        run: pnpm publish --access public
+        run: npm publish --provenance --access public
