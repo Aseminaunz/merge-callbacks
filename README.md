@@ -1,6 +1,8 @@
 # merge-callbacks
 Merge multiple callback functions into a single function that calls all of them in sequence.
 
+[![npm](https://img.shields.io/npm/v/merge-callbacks.svg)](https://www.npmjs.com/package/merge-callbacks)
+
 ```ts
 import mergeCallbacks from 'merge-callbacks'
 
