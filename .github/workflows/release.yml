@@ -7,8 +7,7 @@ permissions:
   attestations: write
 
 env:
-  REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}
+  REGISTRY: npm.pkg.github.com
 
 on:
   workflow_dispatch:
@@ -71,7 +70,7 @@ jobs:
 
       - name: Set up npm auth
         run: |
-          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+          echo "//${{ env.REGISTRY }}/:_authToken=${NPM_TOKEN}" > ~/.npmrc
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
